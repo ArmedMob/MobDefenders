@@ -14,12 +14,16 @@ public class MDItems {
 
     //Ingots
     public static MDItemBase ingotAluminum;
+    public static MDItemBase ingotBrass;
     public static MDItemBase ingotCopper;
+    public static MDItemBase ingotLead;
     public static MDItemBase ingotTin;
 
     //Nuggets
     public static MDItemBase nuggetAluminum;
+    public static MDItemBase nuggetBrass;
     public static MDItemBase nuggetCopper;
+    public static MDItemBase nuggetLead;
     public static MDItemBase nuggetTin;
 
     //Seeds
@@ -37,12 +41,16 @@ public class MDItems {
 
         //Ingots
         ingotAluminum = register(new ItemOre("ingotAluminum", "ingotAluminum"));
+        ingotBrass = register(new ItemOre("ingotBrass", "ingotBrass"));
         ingotCopper = register(new ItemOre("ingotCopper", "ingotCopper"));
+        ingotLead = register(new ItemOre("ingotLead", "ingotLead"));
         ingotTin = register(new ItemOre("ingotTin", "ingotTin"));
 
         //Nuggets
         nuggetAluminum = register(new ItemOre("nuggetAluminum", "nuggetAluminum"));
+        nuggetBrass = register(new ItemOre("nuggetBrass", "nuggetBrass"));
         nuggetCopper = register(new ItemOre("nuggetCopper", "nuggetCopper"));
+        nuggetLead = register(new ItemOre("nuggetLead", "nuggetLead"));
         nuggetTin = register(new ItemOre("nuggetTin", "nuggetTin"));
 
         //Seeds

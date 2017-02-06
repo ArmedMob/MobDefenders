@@ -16,14 +16,16 @@ public class MDBlocks {
 
     //Ores
     public static MDOreBase oreAluminum;
-    //public static MDOreBase oreBrass;
+    public static MDOreBase oreBrass;
     public static MDOreBase oreCopper;
+    public static MDOreBase oreLead;
     public static MDOreBase oreTin;
 
     //Blocks
     public static MDOreBase blockAluminum;
-    //public static MDOreBase blockBrass;
+    public static MDOreBase blockBrass;
     public static MDOreBase blockCopper;
+    public static MDOreBase blockLead;
     public static MDOreBase blockTin;
 
     //Crops
@@ -33,14 +35,16 @@ public class MDBlocks {
 
         //Ores
         oreAluminum = register(new MDOreBase(Material.ROCK, "oreAluminum", "oreAluminum",  4f, 6f, "pickaxe", 2));
-        //oreBrass = register(new MDOreBase(Material.ROCK, "oreBrass", "oreBrass, 4f, 6f, "pickaxe", 2));
+        oreBrass = register(new MDOreBase(Material.ROCK, "oreBrass", "oreBrass", 3f, 5f, "pickaxe", 2));
         oreCopper = register(new MDOreBase(Material.ROCK, "oreCopper", "oreCopper", 4f, 6f, "pickaxe", 2));
+        oreLead = register(new MDOreBase(Material.ROCK, "oreLead", "oreLead", 3f, 5f, "pickaxe", 2));
         oreTin = register(new MDOreBase(Material.ROCK, "oreTin", "oreTin", 4f, 6f, "pickaxe", 2));
 
         //Blocks
         blockAluminum = register(new MDOreBase(Material.IRON, "blockAluminum", "blockAluminum", 4f, 6f, "pickaxe", 2));
-        //blockBrass = register(new MDOreBase(Material.IRON, "blockBrass", "blockBrass", 4f, 6f, "pickaxe", 2));
+        blockBrass = register(new MDOreBase(Material.IRON, "blockBrass", "blockBrass", 3f, 5f, "pickaxe", 2));
         blockCopper = register(new MDOreBase(Material.IRON, "blockCopper", "blockCopper", 4f, 6f, "pickaxe", 2));
+        blockLead = register(new MDOreBase(Material.IRON, "blockLead", "blockLead", 3f, 5f, "pickaxe", 2));
         blockTin = register(new MDOreBase(Material.IRON, "blockTin", "blockTin", 4f, 6f, "pickaxe", 2));
 
         //Crops
