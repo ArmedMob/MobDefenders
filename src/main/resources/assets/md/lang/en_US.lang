@@ -15,6 +15,11 @@ item.nuggetBrass.name=Brass Nugget
 item.nuggetCopper.name=Copper Nugget
 item.nuggetTin.name=Tin Nugget
 
+#Gear Items
+item.gearAluminum.name=Aluminum Gear
+item.gearCopper.name=Copper Gear
+item.gearTin.name=Tin Gear
+
 #Food Items
 item.corn.name=Corn
 item.seedCorn.name=Corn Seed

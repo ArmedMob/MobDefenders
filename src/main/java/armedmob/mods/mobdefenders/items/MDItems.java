@@ -28,6 +28,11 @@ public class MDItems {
     //Foods
     public static MDFoodItem corn;
 
+    //Gears
+    public static MDItemBase gearAluminum;
+    public static MDItemBase gearCopper;
+    public static MDItemBase gearTin;
+
     public static void init() {
 
         //Ingots
@@ -45,6 +50,11 @@ public class MDItems {
 
         //Food
         corn = register(new MDFoodItem("corn", "cropCorn",3, 0.6f, false));
+
+        //Gears
+        gearAluminum = register(new ItemOre("gearAluminum", "gearAluminum"));
+        gearCopper = register(new ItemOre("gearCopper", "gearCopper"));
+        gearTin = register(new ItemOre("gearTin", "gearTin"));
     }
 
     private static <T extends Item> T register(T item) {
