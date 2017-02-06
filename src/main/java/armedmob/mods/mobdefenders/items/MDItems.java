@@ -1,7 +1,10 @@
 package armedmob.mods.mobdefenders.items;
 
+import armedmob.mods.mobdefenders.Refereneces;
+import armedmob.mods.mobdefenders.items.food.MDFoodItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.util.FoodStats;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -9,30 +12,53 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class MDItems {
 
+    //Ingots
     public static MDItemBase ingotAluminum;
     public static MDItemBase ingotCopper;
     public static MDItemBase ingotTin;
+
+    //Nuggets
     public static MDItemBase nuggetAluminum;
     public static MDItemBase nuggetCopper;
     public static MDItemBase nuggetTin;
 
+    //Seeds
+    public static MDCornSeed seedCorn;
+
+    //Foods
+    public static MDFoodItem corn;
+
     public static void init() {
 
-        ingotAluminum = register(new MDItemBase("ingotAluminum").setCreativeTab(CreativeTabs.MATERIALS));
-        ingotCopper = register(new MDItemBase("ingotCopper").setCreativeTab(CreativeTabs.MATERIALS));
-        ingotTin = register(new MDItemBase("ingotTin").setCreativeTab(CreativeTabs.MATERIALS));
-        nuggetAluminum = register(new MDItemBase("nuggetAluminum").setCreativeTab(CreativeTabs.MATERIALS));
-        nuggetCopper = register(new MDItemBase("nuggetCopper").setCreativeTab(CreativeTabs.MATERIALS));
-        nuggetTin = register(new MDItemBase("nuggetTin").setCreativeTab(CreativeTabs.MATERIALS));
+        //Ingots
+        ingotAluminum = register(new ItemOre("ingotAluminum", "ingotAluminum"));
+        ingotCopper = register(new ItemOre("ingotCopper", "ingotCopper"));
+        ingotTin = register(new ItemOre("ingotTin", "ingotTin"));
+
+        //Nuggets
+        nuggetAluminum = register(new ItemOre("nuggetAluminum", "nuggetAluminum"));
+        nuggetCopper = register(new ItemOre("nuggetCopper", "nuggetCopper"));
+        nuggetTin = register(new ItemOre("nuggetTin", "nuggetTin"));
+
+        //Seeds
+        seedCorn = register(new MDCornSeed());
+
+        //Food
+        corn = register(new MDFoodItem("corn", "cropCorn",3, 0.6f, false));
     }
 
     private static <T extends Item> T register(T item) {
 
         GameRegistry.register(item);
 
-        if (item instanceof MDItemBase) {
+        if (item instanceof ItemModelProvider) {
 
-            ((MDItemBase)item).registerItemModel();
+            ((ItemModelProvider)item).registerItemModel(item);
+        }
+
+        if (item instanceof ItemOreDict) {
+
+            ((ItemOreDict)item).initOreDict();
         }
 
         return item;
