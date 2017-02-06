@@ -1,0 +1,16 @@
+[
+{
+  "modid": "md",
+  "name": "Mob Defenders",
+  "description": "Enter Later!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "Enter Later",
+  "updateUrl": "Enter Later",
+  "authorList": ["Armed Mob"],
+  "credits": "G33Z3R_HD, Red Dragons Guild, ShadowFacts, Neale Gaming",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
