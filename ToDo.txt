@@ -1,3 +1,0 @@
-Add Missing .json files for models and blockstates
-Add Missing .lang information for missing items/blocks
-Research how to resources for Tinker's Tools

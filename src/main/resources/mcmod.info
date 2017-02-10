@@ -2,13 +2,13 @@
 {
   "modid": "md",
   "name": "Mob Defenders",
-  "description": "Enter Later!",
+  "description": "A mod that adds worldgen, items, blocks, and useful things to modded Minecraft 1.10.2.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "Enter Later",
-  "updateUrl": "Enter Later",
+  "url": "",
+  "updateUrl": "",
   "authorList": ["Armed Mob"],
-  "credits": "G33Z3R_HD, Red Dragons Guild, ShadowFacts, Neale Gaming",
+  "credits": "RDSG, G33Z3R_HD, NealeGaming, ShadowFacts, JCMinecraft, ForgeTeam",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
