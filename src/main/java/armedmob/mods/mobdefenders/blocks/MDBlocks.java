@@ -30,6 +30,7 @@ public class MDBlocks {
 
     //Crops
     public static CornCropBlock cropCorn;
+    public static SoybeanCropBlock cropSoybean;
 
     public static void init() {
 
@@ -49,6 +50,7 @@ public class MDBlocks {
 
         //Crops
         cropCorn = register(new CornCropBlock(), null);
+        cropSoybean = register(new SoybeanCropBlock(), null);
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

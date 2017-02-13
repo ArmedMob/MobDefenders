@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "md:items/aluminum_ingot"
+    "layer0": "md:items/ingotLead"
   }
 }

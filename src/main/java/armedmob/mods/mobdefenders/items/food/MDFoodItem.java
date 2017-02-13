@@ -17,7 +17,7 @@ public class MDFoodItem extends ItemFood implements ItemModelProvider, ItemOreDi
     protected String name;
     protected String oreName;
 
-    public MDFoodItem(String name, String oreNameint, int amount, float saturation, boolean wolfFood) {
+    public MDFoodItem(String name, String oreName, int amount, float saturation, boolean wolfFood) {
 
         super(amount, saturation, wolfFood);
 

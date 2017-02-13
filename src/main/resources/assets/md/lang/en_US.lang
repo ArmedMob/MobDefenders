@@ -23,6 +23,8 @@ item.gearTin.name=Tin Gear
 #Food Items
 item.corn.name=Corn
 item.seedCorn.name=Corn Seed
+item.soybean.name=Soybean
+item.seedSoybean.name=Soybean Seed
 
 #Ore Blocks
 tile.oreAluminum.name=Aluminum Ore

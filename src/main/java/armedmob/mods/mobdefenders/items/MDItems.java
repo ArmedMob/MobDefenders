@@ -28,9 +28,11 @@ public class MDItems {
 
     //Seeds
     public static MDCornSeed seedCorn;
+    public static MDSoybeanSeed seedSoybean;
 
     //Foods
     public static MDFoodItem corn;
+    public static MDFoodItem soybean;
 
     //Gears
     public static MDItemBase gearAluminum;
@@ -55,9 +57,11 @@ public class MDItems {
 
         //Seeds
         seedCorn = register(new MDCornSeed());
+        seedSoybean = register(new MDSoybeanSeed());
 
         //Food
         corn = register(new MDFoodItem("corn", "cropCorn",3, 0.6f, false));
+        soybean = register(new MDFoodItem("soybean", "cropSoybean",3, 0.6f, false));
 
         //Gears
         gearAluminum = register(new ItemOre("gearAluminum", "gearAluminum"));
