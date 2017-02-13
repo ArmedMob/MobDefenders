@@ -2,6 +2,7 @@ package armedmob.mods.mobdefenders.recipies;
 
 import armedmob.mods.mobdefenders.blocks.MDBlocks;
 import armedmob.mods.mobdefenders.items.MDItems;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -46,5 +47,18 @@ public class MDIngameRecipes {
         GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreCopper)), new ItemStack(MDItems.ingotCopper), 0.0075f);
         GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreLead)), new ItemStack(MDItems.ingotLead), 0.0075f);
         GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreTin)), new ItemStack(MDItems.ingotTin), 0.0075f);
+
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherAluminum)), new ItemStack(Item.getItemFromBlock(MDBlocks.oreAluminum), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherBrass)), new ItemStack(Item.getItemFromBlock(MDBlocks.oreBrass), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherCoal)), new ItemStack(Item.getItemFromBlock(Blocks.COAL_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherCopper)), new ItemStack(Item.getItemFromBlock(MDBlocks.oreCopper), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherDiamond)), new ItemStack(Item.getItemFromBlock(Blocks.DIAMOND_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherEmerald)), new ItemStack(Item.getItemFromBlock(Blocks.EMERALD_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherGold)), new ItemStack(Item.getItemFromBlock(Blocks.GOLD_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherIron)), new ItemStack(Item.getItemFromBlock(Blocks.IRON_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherLapis)), new ItemStack(Item.getItemFromBlock(Blocks.LAPIS_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherLead)), new ItemStack(Item.getItemFromBlock(MDBlocks.oreLead), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherRedstone)), new ItemStack(Item.getItemFromBlock(Blocks.REDSTONE_ORE), 2), 0.075f);
+        GameRegistry.addSmelting(new ItemStack(Item.getItemFromBlock(MDBlocks.oreNetherTin)), new ItemStack(Item.getItemFromBlock(MDBlocks.oreTin), 2), 0.075f);
     }
 }

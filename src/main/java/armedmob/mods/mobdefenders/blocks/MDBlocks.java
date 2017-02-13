@@ -21,6 +21,20 @@ public class MDBlocks {
     public static MDOreBase oreLead;
     public static MDOreBase oreTin;
 
+    //Nether Ores
+    public static MDOreBase oreNetherAluminum;
+    public static MDOreBase oreNetherBrass;
+    public static MDOreBase oreNetherCoal;
+    public static MDOreBase oreNetherCopper;
+    public static MDOreBase oreNetherDiamond;
+    public static MDOreBase oreNetherEmerald;
+    public static MDOreBase oreNetherGold;
+    public static MDOreBase oreNetherIron;
+    public static MDOreBase oreNetherLapis;
+    public static MDOreBase oreNetherLead;
+    public static MDOreBase oreNetherRedstone;
+    public static MDOreBase oreNetherTin;
+
     //Blocks
     public static MDOreBase blockAluminum;
     public static MDOreBase blockBrass;
@@ -35,18 +49,32 @@ public class MDBlocks {
     public static void init() {
 
         //Ores
-        oreAluminum = register(new MDOreBase(Material.ROCK, "oreAluminum", "oreAluminum",  4f, 6f, "pickaxe", 2));
-        oreBrass = register(new MDOreBase(Material.ROCK, "oreBrass", "oreBrass", 3f, 5f, "pickaxe", 2));
-        oreCopper = register(new MDOreBase(Material.ROCK, "oreCopper", "oreCopper", 4f, 6f, "pickaxe", 2));
-        oreLead = register(new MDOreBase(Material.ROCK, "oreLead", "oreLead", 3f, 5f, "pickaxe", 2));
-        oreTin = register(new MDOreBase(Material.ROCK, "oreTin", "oreTin", 4f, 6f, "pickaxe", 2));
+        oreAluminum = register(new MDOreBase(Material.ROCK, "oreAluminum", "oreAluminum",  5.0f, 3.0f, "pickaxe", 1));
+        oreBrass = register(new MDOreBase(Material.ROCK, "oreBrass", "oreBrass", 5.0f, 3.0f, "pickaxe", 1));
+        oreCopper = register(new MDOreBase(Material.ROCK, "oreCopper", "oreCopper", 5.0f, 3.0f, "pickaxe", 1));
+        oreLead = register(new MDOreBase(Material.ROCK, "oreLead", "oreLead", 5.0f, 3.0f, "pickaxe", 1));
+        oreTin = register(new MDOreBase(Material.ROCK, "oreTin", "oreTin", 5.0f, 3.0f, "pickaxe", 1));
+
+        //Nether Ores
+        oreNetherAluminum = register(new MDOreBase(Material.ROCK, "oreNetherAluminum", "oreNetherAluminum", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherBrass = register(new MDOreBase(Material.ROCK, "oreNetherBrass", "oreNetherBrass", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherCoal = register(new MDOreBase(Material.ROCK, "oreNetherCoal", "oreNetherCoal", 5.0f, 3.0f, "pickaxe", 0));
+        oreNetherCopper = register(new MDOreBase(Material.ROCK, "oreNetherCopper", "oreNetherCopper", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherDiamond = register(new MDOreBase(Material.ROCK, "oreNetherDiamond", "oreNetherDiamond", 5.0f, 3.0f, "pickaxe", 2));
+        oreNetherEmerald = register(new MDOreBase(Material.ROCK, "oreNetherEmerald", "oreNetherEmerald", 5.0f, 3.0f, "pickaxe", 2));
+        oreNetherGold = register(new MDOreBase(Material.ROCK, "oreNetherGold", "oreNetherGold", 5.0f, 3.0f, "pickaxe", 2));
+        oreNetherIron = register(new MDOreBase(Material.ROCK, "oreNetherIron", "oreNetherIron", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherLapis = register(new MDOreBase(Material.ROCK, "oreNetherLapis", "oreNetherLapis", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherLead = register(new MDOreBase(Material.ROCK, "oreNetherLead", "oreNetherLead", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherRedstone = register(new MDOreBase(Material.ROCK, "oreNetherRedstone", "oreNetherRedstone", 5.0f, 3.0f, "pickaxe", 2));
+        oreNetherTin = register(new MDOreBase(Material.ROCK, "oreNetherTin", "oreNetherTin", 5.0f, 3.0f, "pickaxe", 1));
 
         //Blocks
-        blockAluminum = register(new MDOreBase(Material.IRON, "blockAluminum", "blockAluminum", 4f, 6f, "pickaxe", 2));
-        blockBrass = register(new MDOreBase(Material.IRON, "blockBrass", "blockBrass", 3f, 5f, "pickaxe", 2));
-        blockCopper = register(new MDOreBase(Material.IRON, "blockCopper", "blockCopper", 4f, 6f, "pickaxe", 2));
-        blockLead = register(new MDOreBase(Material.IRON, "blockLead", "blockLead", 3f, 5f, "pickaxe", 2));
-        blockTin = register(new MDOreBase(Material.IRON, "blockTin", "blockTin", 4f, 6f, "pickaxe", 2));
+        blockAluminum = register(new MDOreBase(Material.IRON, "blockAluminum", "blockAluminum", 10.0f, 5.0f, "pickaxe", 1));
+        blockBrass = register(new MDOreBase(Material.IRON, "blockBrass", "blockBrass", 10.0f, 5.0f, "pickaxe", 1));
+        blockCopper = register(new MDOreBase(Material.IRON, "blockCopper", "blockCopper", 10.0f, 5.0f, "pickaxe", 1));
+        blockLead = register(new MDOreBase(Material.IRON, "blockLead", "blockLead", 10.0f, 5.0f, "pickaxe", 1));
+        blockTin = register(new MDOreBase(Material.IRON, "blockTin", "blockTin", 10.0f, 5.0f, "pickaxe", 1));
 
         //Crops
         cropCorn = register(new CornCropBlock(), null);
