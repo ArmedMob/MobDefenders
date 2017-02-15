@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "up": "md:blocks/kcup",
+      "down": "md:blocks/kcdown",
+      "north": "md:blocks/kcnorth",
+      "south": "md:blocks/kcsouth",
+      "east": "md:blocks/kceast",
+      "west": "md:blocks/kcwest"
+    }
+  },
+  "variants": {
+    "normal": {
+      "model": "minecraft:cube"
+    },
+    "inventory": {
+      "model": "minecraft:cube"
+    }
+  }
+}

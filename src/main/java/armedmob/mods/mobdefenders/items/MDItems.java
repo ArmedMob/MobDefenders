@@ -17,6 +17,8 @@ public class MDItems {
     public static MDItemBase ingotBrass;
     public static MDItemBase ingotCopper;
     public static MDItemBase ingotLead;
+    public static MDItemBase ingotNickel;
+    public static MDItemBase ingotSilver;
     public static MDItemBase ingotTin;
 
     //Nuggets
@@ -24,6 +26,8 @@ public class MDItems {
     public static MDItemBase nuggetBrass;
     public static MDItemBase nuggetCopper;
     public static MDItemBase nuggetLead;
+    public static MDItemBase nuggetNickel;
+    public static MDItemBase nuggetSilver;
     public static MDItemBase nuggetTin;
 
     //Seeds
@@ -36,7 +40,11 @@ public class MDItems {
 
     //Gears
     public static MDItemBase gearAluminum;
+    public static MDItemBase gearBrass;
     public static MDItemBase gearCopper;
+    public static MDItemBase gearLead;
+    public static MDItemBase gearNickel;
+    public static MDItemBase gearSilver;
     public static MDItemBase gearTin;
 
     public static void init() {
@@ -46,6 +54,8 @@ public class MDItems {
         ingotBrass = register(new ItemOre("ingotBrass", "ingotBrass"));
         ingotCopper = register(new ItemOre("ingotCopper", "ingotCopper"));
         ingotLead = register(new ItemOre("ingotLead", "ingotLead"));
+        ingotNickel = register(new ItemOre("ingotNickel", "ingotNickel"));
+        ingotSilver = register(new ItemOre("ingotSilver", "ingotSilver"));
         ingotTin = register(new ItemOre("ingotTin", "ingotTin"));
 
         //Nuggets
@@ -53,6 +63,8 @@ public class MDItems {
         nuggetBrass = register(new ItemOre("nuggetBrass", "nuggetBrass"));
         nuggetCopper = register(new ItemOre("nuggetCopper", "nuggetCopper"));
         nuggetLead = register(new ItemOre("nuggetLead", "nuggetLead"));
+        nuggetNickel = register(new ItemOre("nuggetNickel", "nuggetNickel"));
+        nuggetSilver = register(new ItemOre("nuggetSilver", "nuggetSilver"));
         nuggetTin = register(new ItemOre("nuggetTin", "nuggetTin"));
 
         //Seeds
@@ -65,7 +77,11 @@ public class MDItems {
 
         //Gears
         gearAluminum = register(new ItemOre("gearAluminum", "gearAluminum"));
+        gearBrass = register(new ItemOre("gearBrass", "gearBrass"));
         gearCopper = register(new ItemOre("gearCopper", "gearCopper"));
+        gearLead = register(new ItemOre("gearLead", "gearLead"));
+        gearNickel = register(new ItemOre("gearNickel", "gearNickel"));
+        gearSilver = register(new ItemOre("gearSilver", "gearSilver"));
         gearTin = register(new ItemOre("gearTin", "gearTin"));
     }
 

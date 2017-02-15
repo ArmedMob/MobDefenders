@@ -8,6 +8,8 @@ item.ingotAluminum.name=Aluminum Ingot
 item.ingotBrass.name=Brass Ingot
 item.ingotCopper.name=Copper Ingot
 item.ingotLead.name=Lead Ingot
+item.ingotNickel.name=Nickel Ingot
+item.ingotSilver.name=Silver Ingot
 item.ingotTin.name=Tin Ingot
 
 #Nugget Items
@@ -15,11 +17,17 @@ item.nuggetAluminum.name=Aluminum Nugget
 item.nuggetBrass.name=Brass Nugget
 item.nuggetCopper.name=Copper Nugget
 item.nuggetLead.name=Lead Nugget
+item.nuggetNickel.name=Nickel Nugget
+item.nuggetSilver.name=Silver Nugget
 item.nuggetTin.name=Tin Nugget
 
 #Gear Items
 item.gearAluminum.name=Aluminum Gear
+item.gearBrass.name=Brass Gear
 item.gearCopper.name=Copper Gear
+item.gearLead.name=Lead Gear
+item.gearNickel.name=Nickel Gear
+item.gearSilver.name=Silver Gear
 item.gearTin.name=Tin Gear
 
 #Food Items
@@ -33,6 +41,8 @@ tile.oreAluminum.name=Aluminum Ore
 tile.oreBrass.name=Brass Ore
 tile.oreCopper.name=Copper Ore
 tile.oreLead.name=Lead Ore
+tile.oreNickel.name=Nickel Ore
+tile.oreSilver.name=Silver Ore
 tile.oreTin.name=Tin Ore
 
 #Nether Ore Blocks
@@ -46,7 +56,9 @@ tile.oreNetherGold.name=Gold Nether Ore
 tile.oreNetherIron.name=Iron Nether Ore
 tile.oreNetherLapis.name=Lapis Nether Ore
 tile.oreNetherLead.name=Lead Nether Ore
+tile.oreNetherNickel.name=Nickel Nether Ore
 tile.oreNetherRedstone.name=Redstone Nether Ore
+tile.oreNetherSilver.name=Silver Nether Ore
 tile.oreNetherTin.name=Tin Nether Ore
 
 #Block Blocks
@@ -54,4 +66,9 @@ tile.blockAluminum.name=Aluminum Block
 tile.blockBrass.name=Brass Block
 tile.blockCopper.name=Copper Block
 tile.blockLead.name=Lead Block
+tile.blockNickel.name=Nickel Block
+tile.blockNickel.name=Silver Block
 tile.blockTin.name=Tin Block
+
+#Machine Blocks
+tile.kappaCrate.name=Kappa Counter

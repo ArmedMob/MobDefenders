@@ -1,5 +1,7 @@
 package armedmob.mods.mobdefenders.blocks;
 
+import armedmob.mods.mobdefenders.blocks.tileentities.BlockTileEntity;
+import armedmob.mods.mobdefenders.blocks.tileentities.KappaCrate;
 import armedmob.mods.mobdefenders.items.ItemModelProvider;
 import armedmob.mods.mobdefenders.items.ItemOre;
 import armedmob.mods.mobdefenders.items.ItemOreDict;
@@ -19,6 +21,8 @@ public class MDBlocks {
     public static MDOreBase oreBrass;
     public static MDOreBase oreCopper;
     public static MDOreBase oreLead;
+    public static MDOreBase oreNickel;
+    public static MDOreBase oreSilver;
     public static MDOreBase oreTin;
 
     //Nether Ores
@@ -32,7 +36,9 @@ public class MDBlocks {
     public static MDOreBase oreNetherIron;
     public static MDOreBase oreNetherLapis;
     public static MDOreBase oreNetherLead;
+    public static MDOreBase oreNetherNickel;
     public static MDOreBase oreNetherRedstone;
+    public static MDOreBase oreNetherSilver;
     public static MDOreBase oreNetherTin;
 
     //Blocks
@@ -40,11 +46,16 @@ public class MDBlocks {
     public static MDOreBase blockBrass;
     public static MDOreBase blockCopper;
     public static MDOreBase blockLead;
+    public static MDOreBase blockNickel;
+    public static MDOreBase blockSilver;
     public static MDOreBase blockTin;
 
     //Crops
     public static CornCropBlock cropCorn;
     public static SoybeanCropBlock cropSoybean;
+
+    //Machines
+    public static KappaCrate kappaCrate;
 
     public static void init() {
 
@@ -53,6 +64,8 @@ public class MDBlocks {
         oreBrass = register(new MDOreBase(Material.ROCK, "oreBrass", "oreBrass", 5.0f, 3.0f, "pickaxe", 1));
         oreCopper = register(new MDOreBase(Material.ROCK, "oreCopper", "oreCopper", 5.0f, 3.0f, "pickaxe", 1));
         oreLead = register(new MDOreBase(Material.ROCK, "oreLead", "oreLead", 5.0f, 3.0f, "pickaxe", 1));
+        oreNickel = register(new MDOreBase(Material.ROCK, "oreNickel", "oreNickel", 5.0f, 3.0f, "pickaxe", 1));
+        oreSilver = register(new MDOreBase(Material.ROCK, "oreSilver", "oreSilver", 5.0f, 3.0f, "pickaxe", 1));
         oreTin = register(new MDOreBase(Material.ROCK, "oreTin", "oreTin", 5.0f, 3.0f, "pickaxe", 1));
 
         //Nether Ores
@@ -67,6 +80,8 @@ public class MDBlocks {
         oreNetherLapis = register(new MDOreBase(Material.ROCK, "oreNetherLapis", "oreNetherLapis", 5.0f, 3.0f, "pickaxe", 1));
         oreNetherLead = register(new MDOreBase(Material.ROCK, "oreNetherLead", "oreNetherLead", 5.0f, 3.0f, "pickaxe", 1));
         oreNetherRedstone = register(new MDOreBase(Material.ROCK, "oreNetherRedstone", "oreNetherRedstone", 5.0f, 3.0f, "pickaxe", 2));
+        oreNetherNickel = register(new MDOreBase(Material.ROCK, "oreNetherNickel", "oreNetherNickel", 5.0f, 3.0f, "pickaxe", 1));
+        oreNetherSilver = register(new MDOreBase(Material.ROCK, "oreNetherSilver", "oreNetherSilver", 5.0f, 3.0f, "pickaxe", 1));
         oreNetherTin = register(new MDOreBase(Material.ROCK, "oreNetherTin", "oreNetherTin", 5.0f, 3.0f, "pickaxe", 1));
 
         //Blocks
@@ -74,11 +89,16 @@ public class MDBlocks {
         blockBrass = register(new MDOreBase(Material.IRON, "blockBrass", "blockBrass", 10.0f, 5.0f, "pickaxe", 1));
         blockCopper = register(new MDOreBase(Material.IRON, "blockCopper", "blockCopper", 10.0f, 5.0f, "pickaxe", 1));
         blockLead = register(new MDOreBase(Material.IRON, "blockLead", "blockLead", 10.0f, 5.0f, "pickaxe", 1));
+        blockNickel = register(new MDOreBase(Material.IRON, "blockNickel", "blockNickel", 10.0f, 5.0f, "pickaxe", 1));
+        blockSilver = register(new MDOreBase(Material.IRON, "blockSilver", "blockSilver", 10.0f, 5.0f, "pickaxe", 1));
         blockTin = register(new MDOreBase(Material.IRON, "blockTin", "blockTin", 10.0f, 5.0f, "pickaxe", 1));
 
         //Crops
         cropCorn = register(new CornCropBlock(), null);
         cropSoybean = register(new SoybeanCropBlock(), null);
+
+        //Machines
+        kappaCrate = register(new KappaCrate());
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {
@@ -100,6 +120,11 @@ public class MDBlocks {
                 if (itemBlock instanceof ItemOreDict) {
 
                     ((ItemOreDict)itemBlock).initOreDict();
+                }
+
+                if (block instanceof BlockTileEntity) {
+
+                    GameRegistry.registerTileEntity(((BlockTileEntity<?>)block).getTileEntityClass(), block.getRegistryName().toString());
                 }
             }
 
