@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Mob Defenders
 
 You can use the [editor on GitHub](https://github.com/ArmedMob/MobDefenders/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
