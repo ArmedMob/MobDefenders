@@ -34,6 +34,8 @@ public class MDWorldGeneration implements IWorldGenerator {
         generateOre(MDBlocks.oreBrass.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreCopper.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreLead.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
+        generateOre(MDBlocks.oreNickel.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
+        generateOre(MDBlocks.oreSilver.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreTin.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
     }
 
@@ -49,6 +51,8 @@ public class MDWorldGeneration implements IWorldGenerator {
         generateOre(MDBlocks.oreNetherIron.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreNetherLapis.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 32, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreNetherLead.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
+        generateOre(MDBlocks.oreNetherNickel.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
+        generateOre(MDBlocks.oreNetherSilver.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreNetherRedstone.getDefaultState(), world, random, chunkX * 16, chunkZ * 0, 0, 16, 4 + random.nextInt(4), 6);
         generateOre(MDBlocks.oreNetherTin.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 0, 64, 4 + random.nextInt(4), 6);
     }
