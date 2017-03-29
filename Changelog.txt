@@ -1,0 +1,9 @@
+ChangeLog Mob Defenders
+
+# Version 0.0.9
+
+- Added Corn Seed to grass drops
+- Added Soybean Seed to grass drops
+- Nickel Ore now displays the correct texture
+- Changed WoldGenerator Weight from 3 to 1
+

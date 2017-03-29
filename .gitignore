@@ -20,15 +20,3 @@ build
 # other
 eclipse
 run
-
-src/doc/
-
-src/main/java/au/
-
-src/main/java/mcp/
-
-src/main/java/squeek/
-
-src/main/resources/assets/waila/
-
-src/main/resources/assets/wailaharvestability/

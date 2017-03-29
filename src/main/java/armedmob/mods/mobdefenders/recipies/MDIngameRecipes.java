@@ -5,6 +5,7 @@ import armedmob.mods.mobdefenders.items.MDItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
@@ -27,7 +28,7 @@ public class MDIngameRecipes {
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(MDItems.nuggetLead, 9), MDItems.ingotLead));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(MDItems.ingotLead, 9), MDBlocks.blockLead));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(MDItems.nuggetTin, 9), MDItems.ingotTin));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(MDItems.ingotTin, 9), MDBlocks.blockTin));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(MDItems.ingotTin, 9), MDBlocks.blockTin));     
 
         //Shaped
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MDItems.ingotAluminum), "NNN", "NNN", "NNN", 'N', MDItems.nuggetAluminum));

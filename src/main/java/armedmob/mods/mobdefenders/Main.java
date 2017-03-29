@@ -5,6 +5,9 @@ import armedmob.mods.mobdefenders.generation.MDWorldGeneration;
 import armedmob.mods.mobdefenders.items.MDItems;
 import armedmob.mods.mobdefenders.proxies.CommonProxy;
 import armedmob.mods.mobdefenders.recipies.MDIngameRecipes;
+import net.minecraft.client.Minecraft;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -31,7 +34,9 @@ public class Main
 
         MDBlocks.init();
         MDItems.init();
-        GameRegistry.registerWorldGenerator(new MDWorldGeneration(), 3);
+        GameRegistry.registerWorldGenerator(new MDWorldGeneration(), 1);
+        MinecraftForge.addGrassSeed(new ItemStack(MDItems.seedCorn), 1);
+        MinecraftForge.addGrassSeed(new ItemStack(MDItems.seedSoybean), 1);
     }
 
     @EventHandler
